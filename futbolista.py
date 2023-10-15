@@ -45,4 +45,4 @@ class Futbolista(Deportista, Persona):
         
         
     def __str__(self):
-        return f"Mi nombre es {self.get_nombre()}, soy profesional en el deporte {self.get_deporte()}, tengo {self.get_edad()} años de edad y llevo {self.get_añosPracticando()} años en el deporte."
+        return f"Mi nombre es {self.getNombre()}, soy profesional en el deporte {self.getDeporte()}, tengo {self.getEdad()} años de edad y llevo {self.getAñosPracticando()} años en el deporte."
