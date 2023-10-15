@@ -4,16 +4,16 @@ class Deportista:
         self._añosPracticando=añosPracticando
         self._deportes="futbol"
     
-    def get_deporte(self):
+    def getDeporte(self):
         return self._deporte
 
-    def set_deporte(self, nuevo_deporte):
+    def setDeporte(self, nuevo_deporte):
         self._deporte = nuevo_deporte
 
-    def get_añosPracticando(self):
+    def getAñosPracticando(self):
         return self._añosPracticando
 
-    def set_añosPracticando(self, nuevos_años):
+    def setAñosPracticando(self, nuevos_años):
         self._añosPracticando = nuevos_años    
         
         
