@@ -2,7 +2,7 @@ class Deportista:
     def __init__(self,añosPracticando ):
         
         self._añosPracticando=añosPracticando
-        self._deporte="futbol"
+        self._deporte="Futbol"
     
     def getDeporte(self):
         return self._deporte
