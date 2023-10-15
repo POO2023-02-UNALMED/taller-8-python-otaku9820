@@ -15,25 +15,33 @@ class Futbolista(Deportista, Persona):
         self._piernaHabil=piernaHabil
         Futbolista.listaFutbolistas.append(self)
         
-    def get_golesMarcados(self):
+    def getGolesMarcados(self):
         return self._golesMarcados
 
-    def set_golesMarcados(self, nuevosGoles):
+    def setGolesMarcados(self, nuevosGoles):
         self._golesMarcados = nuevosGoles
 
     # Getter y Setter para tarjetasRojas
-    def get_tarjetasRojas(self):
+    def getTarjetasRojas(self):
         return self._tarjetasRojas
 
-    def set_tarjetasRojas(self, nuevasTarjetas):
+    def setTarjetasRojas(self, nuevasTarjetas):
         self._tarjetasRojas = nuevasTarjetas
 
     # Getter y Setter para piernaHabil
-    def get_piernaHabil(self):
+    def getPiernaHabil(self):
         return self._piernaHabil
 
-    def set_piernaHabil(self, nuevaPierna):
+    def setPiernaHabil(self, nuevaPierna):
         self._piernaHabil = nuevaPierna
+    @classmethod
+    def getListaFutbolistas(self):
+        return Futbolista._listaFutbolistas
+
+    @classmethod
+    def setListaFutbolistas(self, lista):
+        Futbolista._listaFutbolistas = lista
+
         
         
     def __str__(self):
